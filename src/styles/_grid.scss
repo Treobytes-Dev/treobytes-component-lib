@@ -1,0 +1,30 @@
+@import "./_variables";
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box
+}
+
+@media #{$medium} {
+    .container {
+        width: 750px
+    }
+}
+
+@media #{$large} {
+    .container {
+        width: 970px
+    }
+}
+
+@media #{$xlarge} {
+    .container {
+        width: 1170px
+    }
+}

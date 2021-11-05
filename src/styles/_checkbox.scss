@@ -1,0 +1,41 @@
+@import "./_variables";
+// BASE STYLES
+
+.checkbox-wrapper {
+  .label {
+    flex-direction: row;
+
+    .checkbox {
+      order: 1;
+    }
+
+    .required {
+      order: 2;
+    }
+
+    .label-text {
+      order: 3;
+    }
+  }
+
+  .checkbox {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .checkbox input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 4px \9;
+  }
+
+  .checkbox[disabled] {
+    cursor: not-allowed;
+  }
+
+  .checkbox[disabled] label {
+    cursor: not-allowed;
+  }
+}
