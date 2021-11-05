@@ -12,7 +12,7 @@ export const TextInput = ({
   required,
   validateNotEmpty,
   validateEmail,
-  validatePassword,
+  validatePassword, 
   setName,
   editError = false,
   errorText,
