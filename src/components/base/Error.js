@@ -1,6 +1,12 @@
 import React from "react";
 import { string } from "prop-types";
 
+/**
+ * React Error component.
+ * @function
+ * Error - Renders a branded Treobytes error component.
+ */
+
 export const Error = ({ children, additionalClassName, componentName }) => {
   return (
     <p

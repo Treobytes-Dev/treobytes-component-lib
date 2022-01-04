@@ -2,6 +2,12 @@ import React from "react";
 import { string, bool, node } from "prop-types";
 import "../../styles/_label.scss";
 
+/**
+ * React Label component.
+ * @function
+ * Label - Renders a branded Treobytes label element.
+ */
+
 export const Label = ({
   labelFor,
   required,

@@ -2,6 +2,12 @@ import React from "react";
 import { oneOf, string, node } from "prop-types";
 import "../../styles/_anchor.scss";
 
+/**
+ * React Heading component.
+ * @function
+ * Heading - Renders a branded Treobytes heading element.
+ */
+
 export const Heading = ({
   variant,
   children,

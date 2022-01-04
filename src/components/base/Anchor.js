@@ -2,6 +2,12 @@ import React from "react";
 import { string, node } from "prop-types";
 import "../../styles/_anchor.scss";
 
+/**
+ * React Anchor component.
+ * @function
+ * Anchor - Renders a branded Treobytes anchor element.
+ */
+
 export const Anchor = ({
   target,
   href,

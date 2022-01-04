@@ -5,6 +5,12 @@ import "../../styles/_text-area.scss";
 import { Label } from "./Label";
 import { Error } from "./Error";
 
+/**
+ * React TextArea component.
+ * @function
+ * TextArea - Renders a branded Treobytes text-area element.
+ */
+
 export const TextArea = ({
   labelFor,
   labelText,

@@ -1,6 +1,12 @@
 import React, { useState } from "react";
-import {node, string} from "prop-types";
+import { node, string } from "prop-types";
 import "../../styles/_toggle.scss";
+
+/**
+ * React Toggle - Y component.
+ * @function
+ * Toggle - Renders a utility component to toggle (e.g. turn a item off/on).
+ */
 
 export const Toggle = ({
   isOpenChildren,

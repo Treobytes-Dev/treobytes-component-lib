@@ -6,6 +6,12 @@ import "../../styles/_select.scss";
 import { Label } from "./Label";
 import { Error } from "./Error";
 
+/**
+ * React Select component.
+ * @function
+ * Select - Renders a branded Treobytes select element.
+ */
+
 export const Select = ({
   children,
   noLabel = false,

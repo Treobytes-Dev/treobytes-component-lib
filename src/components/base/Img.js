@@ -2,6 +2,12 @@ import React from "react";
 import { string } from "prop-types";
 import "../../styles/_image.scss";
 
+/**
+ * React Image component.
+ * @function
+ * Image - Renders a branded Treobytes image element.
+ */
+
 export const Img = ({ altTag, src, additionalClassName = "" }) => {
   return (
     <img src={src} className={`img ${additionalClassName}`} alt={altTag} />
