@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { string } from "prop-types";
 import "../../styles/_dragAndDrop.scss";
 
+/**
+ * React Drag-and-Drop component.
+ * @function
+ * Drag-and-Drop - Renders a branded Treobytes drag-and-drop component.
+ */
+
 const items = [
   { number: "1", title: "Row 1" },
   { number: "2", title: "Row 2" },

@@ -4,6 +4,12 @@ import { string, func, bool, node } from "prop-types";
 import "../../styles/_checkbox.scss";
 import { Label } from "./Label";
 
+/**
+ * React Checkbox component.
+ * @function
+ * Checkbox - Renders a branded Treobytes checkbox element.
+ */
+
 export const Checkbox = ({
   labelText,
   noLabel = false,

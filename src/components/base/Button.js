@@ -2,6 +2,12 @@ import React from "react";
 import {string, func} from "prop-types";
 import "../../styles/_button.scss";
 
+/**
+ * React Button component.
+ * @function
+ * Button - Renders a branded Treobytes button element.
+ */
+
 export const Button = ({
   children,
   additionalClassName = "",

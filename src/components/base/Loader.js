@@ -2,6 +2,12 @@ import React from "react";
 import {string} from "prop-types";
 import "../../styles/_loader.scss";
 
+/**
+ * React Loader component.
+ * @function
+ * Loader - Renders a branded Treobytes loader component.
+ */
+
 export const Loader = ({ componentName, additionalClassName, fill }) => {
   return (
     <div className={`${componentName} ${additionalClassName}`} data-test-id={`${componentName}`}>

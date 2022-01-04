@@ -3,7 +3,9 @@ import {node, string} from "prop-types";
 import "../../styles/_side-menu.scss";
 
 /**
- * Primary UI component for user interaction
+ * React SideMenu - Y component.
+ * @function
+ * SideMenu - Y - Renders a branded Treobytes sidemenu-y axis component.
  */
 
 export const SideMenuY = ({
