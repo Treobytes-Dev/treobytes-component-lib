@@ -1,2 +1,54 @@
-// BASE STYLES
 @import "./_variables.scss";
+@import "./_grid.scss";
+@import "./_list-item.scss";
+@import "./_unordered-list.scss";
+
+.header {
+  @extend .container;
+  @extend .list-item;
+  @extend .unordered-list;
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid $gray-200;
+
+  .container {
+    .is-small {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+
+      @media #{$medium} {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .is-large {
+      display: none;
+      @media #{$medium} {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .unordered-list {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$medium} {
+      flex-direction: row;
+      width: 40rem;
+    }
+
+    .list-item {
+      padding: 10px 20px;
+    }
+  }
+}

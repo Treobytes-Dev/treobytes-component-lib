@@ -1,28 +1,35 @@
 import React from "react";
-import { node } from "prop-types";
-import { Logo } from "./Logo";
+import { string } from "prop-types";
 
-import { Button } from "./Button";
 import "../../styles/logo.scss";
 
 /**
- * React Header component.
+ * React Logo component.
  * @function
- * Header - Renders a branded Treobytes header component.
+ * Logo - Renders a branded Treobytes logo component.
  */
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header className="header" data-test-id="header">
-    <div className="container">
-      <Logo />
-      {navigation}
-    </div>
-  </header>
+export const Logo = ({ path, href }) => (
+  <div className="logo" data-test-id="logo">
+  <a className="anchor" href={href} target="_self">
+    Logo
+    {/* <img altTag="Treobytes logo" src={path} /> */}
+  </a>
+</div>
 );
 
-Header.propTypes = {
+Logo.propTypes = {
   /**
-   * Include specific navigation component
+   * Define image path
    */
-  navigation: node,
+  path: string,
+
+  /**
+   * Define href attribute
+   */
+  href: string,
+};
+
+Logo.defaultProps = {
+  path: "",
 };

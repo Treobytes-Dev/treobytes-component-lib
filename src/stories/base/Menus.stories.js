@@ -33,7 +33,7 @@ sideMenuX.args = {
   rightIconClose: "Right Close",
   children: "Hello World",
 };
-sideMenuX.storyName = "Default";
+sideMenuX.storyName = "Horizontal";
 
 const Template2 = (args) => <SideMenuY {...args} />;
 
@@ -44,6 +44,6 @@ topMenuY.args = {
   rightIconClose: "Right Close",
   children: "Hello World",
 };
-topMenuY.storyName = "Default";
+topMenuY.storyName = "Lateral";
 
 export default Menus;
