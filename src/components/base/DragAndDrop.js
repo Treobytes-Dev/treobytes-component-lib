@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { string } from "prop-types";
-import "../../styles/_dragAndDrop.scss";
+import "../../styles/dragAndDrop.scss";
 
 /**
  * React Drag-and-Drop component.

@@ -2,7 +2,7 @@ import React from "react";
 import { shape, func } from "prop-types";
 
 import { Button } from "./Button";
-import "../../styles/_header.scss";
+import "../../styles/header.scss";
 
 /**
  * React Header component.

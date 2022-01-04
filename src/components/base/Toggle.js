@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { node, string } from "prop-types";
-import "../../styles/_toggle.scss";
+import "../../styles/toggle.scss";
 
 /**
  * React Toggle - Y component.

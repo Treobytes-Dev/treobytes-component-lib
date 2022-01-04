@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { string } from "prop-types";
-import "../../styles/_animation.scss";
+import "../../styles/animation.scss";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { v4 as uuidv4 } from "uuid";
