@@ -1,5 +1,11 @@
 import React from "react";
 
+/**
+ * Storybook Icons story.
+ * @template
+ * Icons - Renders icons via stories.
+ */
+
 import { Instagram } from "../../icons/Instagram";
 import { ChevronRight } from "../../icons/ChevronRight";
 import { Camera1 } from "../../icons/Camera1";

@@ -2,6 +2,12 @@ import React from "react";
 
 import { AnimationGroup } from "../../components/base/AnimationGroup";
 
+/**
+ * Storybook AnimationGroup story.
+ * @template
+ * AnimationGroup - Renders animation-group via stories.
+ */
+
 const AnimationGroups = {
   title: "Animations/AnimationGroup",
   component: AnimationGroup,

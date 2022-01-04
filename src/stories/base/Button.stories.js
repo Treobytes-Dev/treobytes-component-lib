@@ -2,6 +2,12 @@ import React from "react";
 
 import { Button } from "../../components/base/Button";
 
+/**
+ * Storybook Button story.
+ * @template
+ * Button - Renders the button component via stories.
+ */
+
 const Buttons = {
   title: "HTML Elements/Button",
   component: Button,

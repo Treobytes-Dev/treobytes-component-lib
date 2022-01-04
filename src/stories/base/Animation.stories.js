@@ -2,6 +2,12 @@ import React from "react";
 
 import { Animation } from "../../components/base/Animation";
 
+/**
+ * Storybook Animation story.
+ * @template
+ * Animation - Renders various animations for component via stories.
+ */
+
 const Animations = {
   title: "Animations/Animation",
   component: Animation,

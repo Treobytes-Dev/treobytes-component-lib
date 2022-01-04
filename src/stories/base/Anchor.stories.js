@@ -2,6 +2,12 @@ import React from "react";
 
 import { Anchor } from "../../components/base/Anchor";
 
+/**
+ * Storybook Anchor story.
+ * @template
+ * Anchor - Renders the anchor component via stories.
+ */
+
 const Anchors = {
   title: "HTML Elements/Anchor",
   component: Anchor,

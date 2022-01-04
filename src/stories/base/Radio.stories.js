@@ -2,6 +2,12 @@ import React from "react";
 
 import { Radio } from "../../components/base/Radio";
 
+/**
+ * Storybook Radio story.
+ * @template
+ * Radio - Renders the radio component via stories.
+ */
+
 const Radios = {
   title: "HTML Elements/Radio",
   component: Radio,

@@ -2,6 +2,12 @@ import React from "react";
 
 import { Heading } from "../../components/base/Heading";
 
+/**
+ * Storybook Heading story.
+ * @template
+ * Heading - Renders the heading component via stories.
+ */
+
 const Headings = {
   title: "HTML Elements/Heading",
   component: Heading,

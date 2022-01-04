@@ -2,6 +2,12 @@ import React from "react";
 
 import { Hero } from "../../components/base/Hero";
 
+/**
+ * Storybook Hero story.
+ * @template
+ * Hero - Renders the hero component via stories.
+ */
+
 const Heros = {
   title: "Components/Hero",
   component: Hero,

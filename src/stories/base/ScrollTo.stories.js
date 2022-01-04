@@ -2,6 +2,12 @@ import React from "react";
 
 import { ScrollTo } from "../../components/base/ScrollTo";
 
+/**
+ * Storybook ScrollTo story.
+ * @template
+ * ScrollTo - Renders the scroll-to component via stories.
+ */
+
 const ScrollTos = {
   title: "Components/ScrollTo",
   component: ScrollTo,

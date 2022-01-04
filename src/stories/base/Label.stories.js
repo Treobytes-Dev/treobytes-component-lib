@@ -2,6 +2,12 @@ import React from "react";
 
 import { Label } from "../../components/base/Label";
 
+/**
+ * Storybook Label story.
+ * @template
+ * Label - Renders the label component via stories.
+ */
+
 const Labels = {
   title: "HTML Elements/Label",
   component: Label,
