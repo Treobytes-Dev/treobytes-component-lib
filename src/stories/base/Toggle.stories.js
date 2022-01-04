@@ -2,6 +2,12 @@ import React from "react";
 
 import { Toggle } from "../../components/base/Toggle";
 
+/**
+ * Storybook Toggle story.
+ * @template
+ * Toggle - Renders the toggle component via stories.
+ */
+
 const Toggles = {
   title: "Modules/Toggle",
   component: Toggle,

@@ -2,6 +2,12 @@ import React from "react";
 
 import { Select } from "../../components/base/Select";
 
+/**
+ * Storybook Select story.
+ * @template
+ * Select - Renders the select component via stories.
+ */
+
 const Selects = {
   title: "HTML Elements/Select",
   component: Select,

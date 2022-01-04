@@ -2,6 +2,12 @@ import React from "react";
 
 import { TextArea } from "../../components/base/TextArea";
 
+/**
+ * Storybook TextArea story.
+ * @template
+ * TextArea - Renders the text-area component via stories.
+ */
+
 const TextAreas = {
   title: "HTML Elements/TextArea",
   component: TextArea,

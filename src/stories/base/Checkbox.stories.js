@@ -2,6 +2,12 @@ import React from "react";
 
 import { Checkbox } from "../../components/base/Checkbox";
 
+/**
+ * Storybook Checkbox story.
+ * @template
+ * Checkbox - Renders the checkbox component via stories.
+ */
+
 const Checkboxs = {
   title: "HTML Elements/Checkbox",
   component: Checkbox,

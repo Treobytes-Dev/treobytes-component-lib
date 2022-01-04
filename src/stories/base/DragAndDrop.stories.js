@@ -2,6 +2,12 @@ import React from "react";
 
 import { DragAndDrop } from "../../components/base/DragAndDrop";
 
+/**
+ * Storybook DragAndDrop story.
+ * @template
+ * DragAndDrop - Renders the drag-and-drop component via stories.
+ */
+
 const DragAndDrops = {
   title: "Components/DragAndDrop",
   component: DragAndDrop,

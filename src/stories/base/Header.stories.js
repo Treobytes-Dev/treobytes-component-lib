@@ -2,6 +2,12 @@ import React from "react";
 
 import { Header } from "../../components/base/Header";
 
+/**
+ * Storybook Header story.
+ * @template
+ * Header - Renders the header component via stories.
+ */
+
 const Headers = {
   title: "Headers/Header",
   component: Header,

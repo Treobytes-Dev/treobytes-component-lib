@@ -2,6 +2,12 @@ import React from "react";
 
 import { TextInput } from "../../components/base/TextInput";
 
+/**
+ * Storybook TextInput story.
+ * @template
+ * TextInput - Renders the input component via stories.
+ */
+
 const TextInputs = {
   title: "HTML Elements/TextInput",
   component: TextInput,

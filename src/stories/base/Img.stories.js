@@ -2,6 +2,12 @@ import React from "react";
 
 import { Img } from "../../components/base/Img";
 
+/**
+ * Storybook Image story.
+ * @template
+ * Image - Renders the img component via stories.
+ */
+
 const Images = {
   title: "HTML Elements/Image",
   component: Img,

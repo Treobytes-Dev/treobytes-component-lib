@@ -3,6 +3,12 @@ import React from "react";
 import { SideMenuX } from "../../components/base/SideMenuX";
 import { SideMenuY } from "../../components/base/SideMenuY";
 
+/**
+ * Storybook Menu story.
+ * @template
+ * Menu - Renders the menu component via stories.
+ */
+
 const Menus = {
   title: "Menus/Menus",
   component: [SideMenuX, SideMenuY],
