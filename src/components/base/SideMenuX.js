@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {node, string} from "prop-types";
-import "../../styles/_side-menu.scss";
+import "../../styles/side-menu.scss";
 
 /**
  * React SideMenu - X component.

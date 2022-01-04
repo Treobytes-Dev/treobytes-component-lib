@@ -9,7 +9,7 @@ import { Header } from "../../components/base/Header";
  */
 
 const Headers = {
-  title: "Headers/Header",
+  title: "Header",
   component: Header,
   parameters: {
     docs: {
@@ -25,12 +25,18 @@ const Headers = {
 
 const Template = (args) => <Header {...args} />;
 
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
+export const header = Template.bind({});
+header.args = {
+  linksTo: [
+    { id: 1, href: "https://treobytes.org/", name: "Programs" },
+    { id: 2, href: "https://treobytes.org/", name: "Parents" },
+    { id: 3, href: "https://treobytes.org/", name: "Educators" },
+    { id: 4, href: "https://treobytes.org/", name: "Facilitators" },
+    { id: 5, href: "https://treobytes.org/", name: "About" },
+    { id: 6, href: "https://treobytes.org/", name: "Careers" },
+    { id: 7, href: "https://treobytes.org/", name: "Donate" },
+  ],
 };
-
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+header.storyName = "Default";
 
 export default Headers;
