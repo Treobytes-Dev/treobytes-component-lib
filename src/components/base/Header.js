@@ -3,6 +3,8 @@ import { node } from "prop-types";
 import { Logo } from "./Logo";
 import { SideMenuX } from "./SideMenuX";
 import { Close } from "../../icons/Close";
+import { Menu } from "../../icons/Menu";
+import { SocialIcons } from "./SocialIcons";
 import "../../styles/header.scss";
 
 /**
@@ -14,7 +16,7 @@ import "../../styles/header.scss";
 export const Header = ({ linksTo }) => {
   const navigation = linksTo.map((link) => (
     <a key={link.id} className="anchor" href={link.href}>
-      <li className="list-item">{link.name}</li>
+      <li className="list-item">{link.name.toUpperCase()}</li>
     </a>
   ));
 
@@ -30,16 +32,24 @@ export const Header = ({ linksTo }) => {
               <SideMenuX
                 rightIconClose={
                   <Close
-                    additionalClass=""
+                    additionalClassName=""
                     fill="#000"
                     height={50}
                     viewBox="0 0 25 25"
                     width={50}
                   />
                 }
-                trigger="Click me"
+                trigger={
+                  <Menu
+                    additionalClassName="action"
+                    height={50}
+                    viewBox="0 0 512 512"
+                    width={50}
+                  />
+                }
               >
                 {navigation}
+                <SocialIcons />
               </SideMenuX>
             </div>
           </ul>
