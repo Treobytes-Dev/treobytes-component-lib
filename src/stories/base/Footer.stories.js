@@ -9,7 +9,7 @@ import { Footer } from "../../components/base/Footer";
  */
 
 const Footers = {
-  title: "Treobytes Branded/Footer",
+  title: "Treobytes Branded/Components/Footer",
   component: Footer,
   parameters: {
     docs: {

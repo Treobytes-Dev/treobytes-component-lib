@@ -9,7 +9,7 @@ import { Header } from "../../components/base/Header";
  */
 
 const Headers = {
-  title: "Treobytes Branded/Header",
+  title: "Treobytes Branded/Components/Header",
   component: Header,
   parameters: {
     docs: {
