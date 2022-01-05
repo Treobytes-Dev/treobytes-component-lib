@@ -3,6 +3,7 @@ import { node } from "prop-types";
 import { Logo } from "./Logo";
 import { SideMenuX } from "./SideMenuX";
 import { Close } from "../../icons/Close";
+import { Menu } from "../../icons/Menu";
 import "../../styles/header.scss";
 
 /**
@@ -30,14 +31,21 @@ export const Header = ({ linksTo }) => {
               <SideMenuX
                 rightIconClose={
                   <Close
-                    additionalClass=""
+                    additionalClassName=""
                     fill="#000"
                     height={50}
                     viewBox="0 0 25 25"
                     width={50}
                   />
                 }
-                trigger="Click me"
+                trigger={
+                  <Menu
+                  additionalClassName="action"
+                    height={50}
+                    viewBox="0 0 512 512"
+                    width={50}
+                  />
+                }
               >
                 {navigation}
               </SideMenuX>

@@ -16,15 +16,23 @@
   border-bottom: 1px solid $gray-200;
 
   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
     .is-small {
       display: flex;
       align-items: center;
-      // justify-content: space-between;
 
       @media #{$medium} {
         display: none;
-        align-items: center;
-        justify-content: space-between;
+      }
+
+      .menu.action {
+        visibility: visible;
+        height: 30px;
+        width: 30px;
       }
     }
 
@@ -35,6 +43,11 @@
         align-items: center;
         justify-content: space-between;
       }
+    }
+
+    .logo,
+    .main-nav {
+width: 50%;
     }
   }
 
