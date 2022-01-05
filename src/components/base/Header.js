@@ -15,7 +15,7 @@ import "../../styles/header.scss";
 export const Header = ({ linksTo }) => {
   const navigation = linksTo.map((link) => (
     <a key={link.id} className="anchor" href={link.href}>
-      <li className="list-item">{link.name}</li>
+      <li className="list-item">{link.name.toUpperCase()}</li>
     </a>
   ));
 
@@ -40,7 +40,7 @@ export const Header = ({ linksTo }) => {
                 }
                 trigger={
                   <Menu
-                  additionalClassName="action"
+                    additionalClassName="action"
                     height={50}
                     viewBox="0 0 512 512"
                     width={50}

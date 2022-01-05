@@ -13,14 +13,15 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  border-bottom: 1px solid $gray-200;
+  border-bottom: 1px solid $gray-600;
+  background-color: $primary;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    
+
     .is-small {
       display: flex;
       align-items: center;
@@ -33,6 +34,11 @@
         visibility: visible;
         height: 30px;
         width: 30px;
+      }
+
+    //   styles the background color when menu is open
+      .menu.active {
+        background-color: white;
       }
     }
 
@@ -47,7 +53,11 @@
 
     .logo,
     .main-nav {
-width: 50%;
+      width: 50%;
+
+      @media #{$medium} {
+          width: auto;
+      }
     }
   }
 
@@ -57,11 +67,15 @@ width: 50%;
 
     @media #{$medium} {
       flex-direction: row;
-      width: 40rem;
     }
 
     .list-item {
-      padding: 10px 20px;
+        color: $third;
+        padding: 10px 20px;
+
+        &:hover {
+            color: $gray-600;
+        }
     }
   }
 }
