@@ -4,6 +4,7 @@ import { Logo } from "./Logo";
 import { SideMenuX } from "./SideMenuX";
 import { Close } from "../../icons/Close";
 import { Menu } from "../../icons/Menu";
+import { SocialIcons } from "./SocialIcons";
 import "../../styles/header.scss";
 
 /**
@@ -48,6 +49,7 @@ export const Header = ({ linksTo }) => {
                 }
               >
                 {navigation}
+                <SocialIcons />
               </SideMenuX>
             </div>
           </ul>

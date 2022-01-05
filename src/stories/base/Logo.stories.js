@@ -9,7 +9,7 @@ import { Logo } from "../../components/base/Logo";
  */
 
  const Logos = {
-    title: "Logos",
+    title: "Treobytes Branded/Logos",
     component: Logo,
     parameters: {
       docs: {
