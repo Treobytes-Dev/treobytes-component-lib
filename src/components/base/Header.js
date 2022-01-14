@@ -17,9 +17,10 @@ export const Header = ({ linksTo }) => {
   const ref = useRef();
   const sticky = useStickyHeader( 50 );
   const { clientHeight } = ref;
-  // const checkChange = (value) => {
-  //   setCheck(value);
-  // };
+  let [check, setCheck] = useState(true);
+  const checkChange = (value) => {
+    setCheck(value);
+  };
 
   const navigation = linksTo.map((link) => (
     <a key={link.id} className="anchor" href={link.href}>
@@ -43,6 +44,25 @@ export const Header = ({ linksTo }) => {
     });
     
     return stick;
+  }
+
+  const Switch = ({children, defaultValue, onCheck}) => {
+    const [check, setCheck] = useState(defaultValue);
+     
+    useEffect(() => {
+      onCheck(check);
+    });
+    
+    return(
+      <div className="switch">
+        <label>
+        <input
+          type="checkbox"
+          onClick={() => setCheck(!check)}
+          checked={check}/>
+         {' '} - { children }</label>
+      </div>
+    );
   }
 
   return (
@@ -82,6 +102,8 @@ export const Header = ({ linksTo }) => {
         </div>
       </div>
     </header>
+    
+    <Switch onCheck={setCheck} defaultValue={ check }>Toggle Sticky</Switch>
 
     <p>
     Conveniently coordinate market positioning vortals after go forward e-services. Collaboratively incentivize plug-and-play e-markets and performance based deliverables. Rapidiously syndicate diverse supply chains whereas market-driven resources. Assertively innovate end-to-end methods of empowerment for multidisciplinary channels. Energistically drive business strategic theme areas with technically sound technologies.
