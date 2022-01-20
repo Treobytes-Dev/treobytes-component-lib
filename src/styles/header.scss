@@ -79,16 +79,3 @@
     }
   }
 }
-
-header {
-  position: sticky;
-  top: -1px;
-  transition: 0.2s ease-out;
-  background-color: blue;
-  height: 150px;
-
-  &.isSticky {
-    background-color: salmon;
-    height: 50px;
-  }
-}
