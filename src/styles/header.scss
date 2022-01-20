@@ -36,7 +36,7 @@
         width: 30px;
       }
 
-    //   styles the background color when menu is open
+      //   styles the background color when menu is open
       .menu.active {
         background-color: white;
       }
@@ -56,7 +56,7 @@
       width: 50%;
 
       @media #{$medium} {
-          width: auto;
+        width: auto;
       }
     }
   }
@@ -70,51 +70,25 @@
     }
 
     .list-item {
-        color: $third;
-        padding: 10px 20px;
+      color: $third;
+      padding: 10px 20px;
 
-        &:hover {
-            color: $gray-600;
-        }
+      &:hover {
+        color: $gray-600;
+      }
     }
   }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
-  animation: slide 0.3s;
-  box-shadow: 0 20px 30px rgba(#000, 0.2);
-  background: rgba(#f3f3f3, 0.5);
-  
-  label {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
+header {
+  position: sticky;
+  top: -1px;
+  transition: 0.2s ease-out;
+  background-color: blue;
+  height: 150px;
 
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2, 1.05);
-  }
-  100% {
-    transform: scale(1);
+  &.isSticky {
+    background-color: salmon;
+    height: 50px;
   }
 }
