@@ -25,8 +25,8 @@ const Headers = {
 
 const Template = (args) => <Header {...args} />;
 
-export const header = Template.bind({});
-header.args = {
+export const headerBasic = Template.bind({});
+headerBasic.args = {
   linksTo: [
     { id: 1, href: "https://treobytes.org/", name: "Programs" },
     { id: 2, href: "https://treobytes.org/", name: "Parents" },
@@ -36,7 +36,8 @@ header.args = {
     { id: 6, href: "https://treobytes.org/", name: "Careers" },
     { id: 7, href: "https://treobytes.org/", name: "Donate" },
   ],
+  isAnimated: false
 };
-header.storyName = "Default";
+headerBasic.storyName = "Default";
 
 export default Headers;
