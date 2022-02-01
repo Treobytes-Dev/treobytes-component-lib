@@ -1,7 +1,7 @@
-@import './_variables';
+@import "./_variables";
 // BASE STYLES
 
-[role='button'] {
+[role="button"] {
   cursor: pointer;
 }
 
@@ -23,7 +23,10 @@
   text-transform: none;
   margin: auto;
   display: flex;
+  justify-content: center;
   width: 100%;
+  padding: 10px 0;
+  color: $color-white;
 }
 
 .button:focus,
@@ -48,4 +51,36 @@
   opacity: 0.65;
   filter: alpha(opacity=65);
   box-shadow: none;
+}
+
+.primary {
+  background-color: $primary;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.secondary {
+  background-color: $secondary;
+
+  &:hover {
+    background-color: $secondary-hover;
+  }
+}
+
+.warning {
+  background-color: $warning;
+
+  &:hover {
+    background-color: $warning-hover;
+  }
+}
+
+.alert {
+  background-color: $alert;
+
+  &:hover {
+    background-color: $alert-hover;
+  }
 }
