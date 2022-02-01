@@ -44,6 +44,7 @@ Button.propTypes = {
    * Add an additional className
    */
   additionalClassName: string,
+  
   /**
    * Optional click handler
    */
