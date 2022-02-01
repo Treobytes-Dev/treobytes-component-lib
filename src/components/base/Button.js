@@ -1,5 +1,5 @@
 import React from "react";
-import {string, func} from "prop-types";
+import { string, func } from "prop-types";
 import "../../styles/_button.scss";
 
 /**
@@ -13,13 +13,14 @@ export const Button = ({
   additionalClassName = "",
   componentName,
   disabled,
+  variant,
   ...props
 }) => {
   return (
     <button
       data-test-id={componentName}
       type={componentName}
-      className={`${componentName} ${additionalClassName}`}
+      className={`${componentName} ${variant} ${additionalClassName}`}
       disabled={disabled}
       {...props}
     >
@@ -33,6 +34,11 @@ Button.propTypes = {
    * Button contents
    */
   children: string.isRequired,
+
+  /**
+   * Button variant color
+   */
+  variant: string.isRequired,
 
   /**
    * Add an additional className
