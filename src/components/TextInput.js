@@ -6,6 +6,12 @@ import "../../styles/abstraks/text-input.scss";
 import { Label } from "./Label";
 import { Error } from "./Error";
 
+/**
+ * React TextInput component.
+ * @function
+ * TextInput - Renders a branded Treobytes input (review type options in story) element.
+ */
+
 export const TextInput = ({
   labelFor,
   labelText,

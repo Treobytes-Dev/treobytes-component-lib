@@ -1,8 +1,14 @@
 import React from "react";
 import { string, any } from "prop-types";
-import "../../styles/_animation.scss";
+import "../../styles/animation.scss";
 
 // https://animate.style/#utilities
+
+/**
+ * React Animation wrapper component.
+ * @function
+ * Parent component for rendering an animation for any element.
+ */
 
 export const Animation = ({
   children,

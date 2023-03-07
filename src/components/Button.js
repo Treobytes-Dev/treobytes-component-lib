@@ -1,19 +1,26 @@
 import React from "react";
-import {string, func} from "prop-types";
+import { string, func } from "prop-types";
 import "../../styles/_button.scss";
+
+/**
+ * React Button component.
+ * @function
+ * Button - Renders a branded Treobytes button element.
+ */
 
 export const Button = ({
   children,
   additionalClassName = "",
   componentName,
   disabled,
+  variant,
   ...props
 }) => {
   return (
     <button
       data-test-id={componentName}
       type={componentName}
-      className={`${componentName} ${additionalClassName}`}
+      className={`${componentName} ${variant} ${additionalClassName}`}
       disabled={disabled}
       {...props}
     >
@@ -29,9 +36,15 @@ Button.propTypes = {
   children: string.isRequired,
 
   /**
+   * Button variant color
+   */
+  variant: string.isRequired,
+
+  /**
    * Add an additional className
    */
   additionalClassName: string,
+  
   /**
    * Optional click handler
    */

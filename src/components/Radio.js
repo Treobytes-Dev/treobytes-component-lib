@@ -5,6 +5,12 @@ import "../../styles/_select.scss";
 import { Label } from "./Label";
 import { Error } from "./Error";
 
+/**
+ * React Radio component.
+ * @function
+ * Radio - Renders a branded Treobytes radio element.
+ */
+
 export const Radio = ({
   noLabel = false,
   required,

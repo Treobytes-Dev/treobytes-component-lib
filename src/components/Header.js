@@ -1,52 +1,74 @@
-import React from 'react';
-import {shape, func} from 'prop-types';
+import React, { useRef, useState, useEffect } from "react";
+import { node, bool } from "prop-types";
+import { Logo } from "./Logo";
+import { SideMenuX } from "./SideMenuX";
+import { Close } from "../../icons/Close";
+import { Menu } from "../../icons/Menu";
+import { SocialIcons } from "./SocialIcons";
+import "../../styles/header.scss";
 
-import { Button } from './Button';
-import '../../styles/_header.scss';
+/**
+ * React Header component.
+ * @function
+ * Header - Renders a branded Treobytes header component.
+ */
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header>
-    <div className="wrapper">
-      <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
-      </div>
-      <div>
-        {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
-        )}
-      </div>
-    </div>
-  </header>
-);
+export const Header = ({ linksTo }) => {
+  const navigation = linksTo.map((link) => (
+    <a key={link.id} className="anchor" href={link.href}>
+      <li className="list-item">{link.name.toUpperCase()}</li>
+    </a>
+  ));
 
-Header.propTypes = {
-  user: shape({}),
-  onLogin: func.isRequired,
-  onLogout: func.isRequired,
-  onCreateAccount: func.isRequired,
+  return (
+    <>
+      <header className="header" data-test-id="header">
+        <div className="container">
+          <Logo />
+          <div className="main-nav">
+            <ul className="unordered-list">
+              <div className="is-large">{navigation}</div>
+
+              <div className="is-small">
+                <SideMenuX
+                  rightIconClose={
+                    <Close
+                      additionalClassName=""
+                      fill="#000"
+                      height={50}
+                      viewBox="0 0 25 25"
+                      width={50}
+                    />
+                  }
+                  trigger={
+                    <Menu
+                      additionalClassName="action"
+                      height={50}
+                      viewBox="0 0 512 512"
+                      width={50}
+                    />
+                  }
+                >
+                  {navigation}
+                  <SocialIcons />
+                </SideMenuX>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </>
+  );
 };
 
-Header.defaultProps = {
-  user: null,
+Header.propTypes = {
+  /**
+   * Include specific navigation component
+   */
+  navigation: node,
+
+  /**
+   * Include specific navigation component
+   */
+  isAnimated: bool,
 };

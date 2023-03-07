@@ -1,6 +1,12 @@
 import React from "react";
 import { string } from "prop-types";
-import "../../styles/_hero.scss";
+import "../../styles/hero.scss";
+
+/**
+ * React Hero component.
+ * @function
+ * Hero - Renders a branded Treobytes hero component.
+ */
 
 export const Hero = ({
   componentName,

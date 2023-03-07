@@ -4,6 +4,12 @@ import { Link, BrowserRouter } from "react-router-dom";
 import "../../styles/_button.scss";
 import ScrollHandler from "../../utils/ScrollHandler";
 
+/**
+ * React Scroll-To component.
+ * @function
+ * Scroll-To - Renders a branded Treobytes scroll-to component.
+ */
+
 const Navigation = ({ positions }) => (
   <>
     {positions.map((num) => (
