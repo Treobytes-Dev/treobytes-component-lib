@@ -1,0 +1,12 @@
+@import "./_variables";
+@import "./_grid.scss";
+// BASE STYLES
+
+.footer {
+  @extend .container;
+
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 20px 0;
+}

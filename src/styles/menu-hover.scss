@@ -1,0 +1,31 @@
+@import "./_variables";
+// BASE STYLES
+
+.unordered-list {
+    display: flex;
+  }
+  
+  .list-item {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .link-content,
+  .NavLink {
+    display: flex;
+  }
+  
+  .link-content {
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+  }
+  
+  .wrap-head {
+    display: flex;
+  }
+  
+  .wrap-content {
+    display: inline-flex;
+    width: 50%;
+  }

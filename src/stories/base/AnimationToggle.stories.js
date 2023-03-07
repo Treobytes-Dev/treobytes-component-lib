@@ -2,6 +2,12 @@ import React from "react";
 
 import { AnimationToggle } from "../../components/base/AnimationToggle";
 
+/**
+ * Storybook AnimationToggle story.
+ * @template
+ * AnimationToggle - Renders animation-toggle via stories.
+ */
+
 const AnimationToggles = {
   title: "Animations/AnimationToggle",
   component: AnimationToggle,

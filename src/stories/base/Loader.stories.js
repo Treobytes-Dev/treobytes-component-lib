@@ -2,6 +2,12 @@ import React from "react";
 
 import { Loader } from "../../components/base/Loader";
 
+/**
+ * Storybook Loader story.
+ * @template
+ * Loader - Renders the loader component via stories.
+ */
+
 const Loaders = {
   title: "Loaders/Loader",
   component: Loader,

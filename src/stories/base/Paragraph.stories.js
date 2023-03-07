@@ -2,6 +2,12 @@ import React from "react";
 
 import { Paragraph } from "../../components/base/Paragraph";
 
+/**
+ * Storybook Paragraph story.
+ * @template
+ * Paragraph - Renders the paragraph component via stories.
+ */
+
 const Paragraphs = {
   title: "HTML Elements/Paragraph",
   component: Paragraph,

@@ -2,6 +2,12 @@ import React from "react";
 
 import { AnimationSwitch } from "../../components/base/AnimationSwitch";
 
+/**
+ * Storybook AnimationSwitch story.
+ * @template
+ * AnimationSwitch - Renders animation-switch via stories.
+ */
+
 const AnimationSwitchs = {
   title: "Animations/AnimationSwitch",
   component: AnimationSwitch,
