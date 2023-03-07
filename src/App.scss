@@ -1,29 +1,28 @@
 // base imports
-@import "./styles/_grid.scss";
-@import "./styles/_anchor.scss";
+@import './styles/grid.scss';
+@import './styles/anchor.scss';
 
-@import "./styles/_button.scss";
-@import "./styles/_checkbox.scss";
+@import './styles/button.scss';
+@import './styles/checkbox.scss';
 
+@import './styles/image.scss';
+@import './styles/heading.scss';
+@import './styles/label.scss';
 
-@import "./styles/_image.scss";
-@import "./styles/_heading.scss";
-@import "./styles/_label.scss";
+@import './styles/radio.scss';
+@import './styles/select.scss';
 
-@import "./styles/_radio.scss";
-@import "./styles/_select.scss";
+@import './styles/text-area.scss';
+@import './styles/text-input.scss';
 
-@import "./styles/_text-area.scss";
-@import "./styles/_text-input.scss";
-
-@import "./styles/_unordered-list.scss";
+@import './styles/unordered-list.scss';
 
 // component imports
-@import "./styles/animation.scss";
-@import "./styles/dragAndDrop.scss";
-@import "./styles/toggle.scss";
-@import "./styles/error.scss";
-@import "./styles/header.scss";
-@import "./styles/hero.scss";
-@import "./styles/loader.scss";
-@import "./styles/side-menu.scss";
+@import './styles/animation.scss';
+@import './styles/dragAndDrop.scss';
+@import './styles/toggle.scss';
+@import './styles/error.scss';
+@import './styles/header.scss';
+@import './styles/hero.scss';
+@import './styles/loader.scss';
+@import './styles/side-menu.scss';
