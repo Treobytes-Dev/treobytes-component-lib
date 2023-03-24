@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Paragraph } from '../components/Paragraph';
-
+import '../styles/paragraph.scss';
 /**
  * Storybook Paragraph story.
  * @template

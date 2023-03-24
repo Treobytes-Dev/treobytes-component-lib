@@ -2,7 +2,7 @@ import React from 'react';
 
 import { SideMenuX } from '../components/SideMenuX';
 import { SideMenuY } from '../components/SideMenuY';
-
+import '../styles/side-menu.scss';
 /**
  * Storybook Menu story.
  * @template

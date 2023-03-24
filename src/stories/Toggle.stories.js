@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Toggle } from '../components/Toggle';
-
+import '../styles/toggle.scss';
 /**
  * Storybook Toggle story.
  * @template

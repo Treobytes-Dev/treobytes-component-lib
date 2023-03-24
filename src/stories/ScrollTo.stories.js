@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ScrollTo } from '../components/ScrollTo';
-
+import '../styles/button.scss';
 /**
  * Storybook ScrollTo story.
  * @template

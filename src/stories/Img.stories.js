@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Img } from '../components/Img';
-
+import '../styles/image.scss';
 /**
  * Storybook Image story.
  * @template

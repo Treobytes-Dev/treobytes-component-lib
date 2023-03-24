@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Label } from '../components/Label';
-
+import '../styles/label.scss';
 /**
  * Storybook Label story.
  * @template

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Heading } from '../components/Heading';
-
+import '../styles/heading.scss';
 /**
  * Storybook Heading story.
  * @template

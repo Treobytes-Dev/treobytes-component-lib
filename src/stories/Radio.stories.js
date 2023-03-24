@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Radio } from '../components/Radio';
-
+import '../styles/select.scss';
 /**
  * Storybook Radio story.
  * @template

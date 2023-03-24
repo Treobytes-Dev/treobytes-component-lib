@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Footer } from '../components/Footer';
-
+import '../styles/footer.scss';
 /**
  * Storybook Footer story.
  * @template

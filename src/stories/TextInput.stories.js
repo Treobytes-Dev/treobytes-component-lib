@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { TextInput } from '../components/TextInput';
+import '../styles/text-input.scss';
 
 /**
  * Storybook TextInput story.

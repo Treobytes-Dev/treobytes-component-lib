@@ -1,8 +1,7 @@
-import React from "react";
-import { string, node } from "prop-types";
+import React from 'react';
+import { string, node } from 'prop-types';
 
-import { SocialIcons } from "./SocialIcons";
-import "../../styles/footer.scss";
+import { SocialIcons } from './SocialIcons';
 
 /**
  * React Footer component.
@@ -11,35 +10,35 @@ import "../../styles/footer.scss";
  */
 
 export const Footer = () => {
-  return (
-    <footer className="footer" data-test-id="footer">
-      <SocialIcons />
-    </footer>
-  );
+	return (
+		<footer className='footer' data-test-id='footer'>
+			<SocialIcons />
+		</footer>
+	);
 };
 
 Footer.propTypes = {
-  /**
-   * Tell the browser where to open link.
-   */
-  target: string,
+	/**
+	 * Tell the browser where to open link.
+	 */
+	target: string,
 
-  /**
-   * Tell the browser where to open link.
-   */
-  href: string.isRequired,
+	/**
+	 * Tell the browser where to open link.
+	 */
+	href: string.isRequired,
 
-  /**
-   * Add an additional className
-   */
-  additionalClassName: string,
+	/**
+	 * Add an additional className
+	 */
+	additionalClassName: string,
 
-  /**
-   * Footer contents
-   */
-  children: node.isRequired,
+	/**
+	 * Footer contents
+	 */
+	children: node.isRequired,
 };
 
 Footer.defaultProps = {
-  componentName: "footer",
+	componentName: 'footer',
 };

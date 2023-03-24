@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { TextArea } from '../components/TextArea';
-
+import '../styles/text-area.scss';
 /**
  * Storybook TextArea story.
  * @template

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Loader } from '../components/Loader';
-
+import '../styles/loader.scss';
 /**
  * Storybook Loader story.
  * @template

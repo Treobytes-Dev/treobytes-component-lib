@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Select } from '../components/Select';
-
+import '../styles/select.scss';
 /**
  * Storybook Select story.
  * @template
