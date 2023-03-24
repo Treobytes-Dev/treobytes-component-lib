@@ -1,7 +1,5 @@
-import React from "react";
-import { string } from "prop-types";
-
-import "../../styles/logo.scss";
+import React from 'react';
+import { string } from 'prop-types';
 
 /**
  * React Logo component.
@@ -10,26 +8,26 @@ import "../../styles/logo.scss";
  */
 
 export const Logo = ({ path, href }) => (
-  <div className="logo" data-test-id="logo">
-  <a className="anchor" href={href} target="_self">
-    Logo
-    {/* <img altTag="Treobytes logo" src={path} /> */}
-  </a>
-</div>
+	<div className='logo' data-test-id='logo'>
+		<a className='anchor' href={href} target='_self'>
+			Logo
+			{/* <img altTag="Treobytes logo" src={path} /> */}
+		</a>
+	</div>
 );
 
 Logo.propTypes = {
-  /**
-   * Define image path
-   */
-  path: string,
+	/**
+	 * Define image path
+	 */
+	path: string,
 
-  /**
-   * Define href attribute
-   */
-  href: string,
+	/**
+	 * Define href attribute
+	 */
+	href: string,
 };
 
 Logo.defaultProps = {
-  path: "",
+	path: '',
 };

@@ -1,6 +1,5 @@
-import React from "react";
-import { any, string } from "prop-types";
-import "../../styles/_paragraph.scss";
+import React from 'react';
+import { any, string } from 'prop-types';
 
 /**
  * React Paragraph component.
@@ -8,18 +7,18 @@ import "../../styles/_paragraph.scss";
  * Paragraph - Renders a branded Treobytes paragraph element.
  */
 
-export const Paragraph = ({ children, additionalClassName = "" }) => {
-  return <p className={`paragraph ${additionalClassName}`}>{children}</p>;
+export const Paragraph = ({ children, additionalClassName = '' }) => {
+	return <p className={`paragraph ${additionalClassName}`}>{children}</p>;
 };
 
 Paragraph.propTypes = {
-  /**
-   * Define children
-   */
-  children: any,
+	/**
+	 * Define children
+	 */
+	children: any,
 
-  /**
-   * Define an additional className
-   */
-  additionalClassName: string,
+	/**
+	 * Define an additional className
+	 */
+	additionalClassName: string,
 };

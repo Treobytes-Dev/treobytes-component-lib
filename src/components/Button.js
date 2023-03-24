@@ -1,6 +1,5 @@
-import React from "react";
-import { string, func } from "prop-types";
-import "../../styles/_button.scss";
+import React from 'react';
+import { string, func } from 'prop-types';
 
 /**
  * React Button component.
@@ -9,49 +8,49 @@ import "../../styles/_button.scss";
  */
 
 export const Button = ({
-  children,
-  additionalClassName = "",
-  componentName,
-  disabled,
-  variant,
-  ...props
+	children,
+	additionalClassName = '',
+	componentName,
+	disabled,
+	variant,
+	...props
 }) => {
-  return (
-    <button
-      data-test-id={componentName}
-      type={componentName}
-      className={`${componentName} ${variant} ${additionalClassName}`}
-      disabled={disabled}
-      {...props}
-    >
-      {children}
-    </button>
-  );
+	return (
+		<button
+			data-test-id={componentName}
+			type={componentName}
+			className={`${componentName} ${variant} ${additionalClassName}`}
+			disabled={disabled}
+			{...props}
+		>
+			{children}
+		</button>
+	);
 };
 
 Button.propTypes = {
-  /**
-   * Button contents
-   */
-  children: string.isRequired,
+	/**
+	 * Button contents
+	 */
+	children: string.isRequired,
 
-  /**
-   * Button variant color
-   */
-  variant: string.isRequired,
+	/**
+	 * Button variant color
+	 */
+	variant: string.isRequired,
 
-  /**
-   * Add an additional className
-   */
-  additionalClassName: string,
-  
-  /**
-   * Optional click handler
-   */
-  onClick: func,
+	/**
+	 * Add an additional className
+	 */
+	additionalClassName: string,
+
+	/**
+	 * Optional click handler
+	 */
+	onClick: func,
 };
 
 Button.defaultProps = {
-  componentName: "button",
-  onClick: undefined,
+	componentName: 'button',
+	onClick: undefined,
 };
