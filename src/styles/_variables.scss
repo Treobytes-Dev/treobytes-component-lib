@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 // break points
 $small: '(min-width: 607px)';
 $medium: '(min-width: 768px)';
@@ -39,3 +41,6 @@ $warning-hover: #D98E25;
 $alert-hover: #D93B30;
 
 $third: rgb(130,153,156);
+
+// fonts
+$heading-font: 'Noto Sans JP', sans-serif;
