@@ -1,31 +1,17 @@
 @import "./_variables";
 
 h1 {
-    font-family: $heading-font;
     font-weight: 800;
+    font-size: 96px;
+    letter-spacing: -.3rem;
 }
 
 h2 {
-    font-family: $heading-font;
     font-weight: 700;
+    font-size: 61px;
+    letter-spacing: -.1rem;
 }
 
-h3 {
-    font-family: $heading-font;
-    font-weight: 600;
-}
-
-h4 {
-    font-family: $heading-font;
-    font-weight: 500;
-}
-
-h5 {
-    font-family: $heading-font;
-    font-weight: 400;
-}
-
-h6 {
-    line-height: 1;
-    font-weight: 300;
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family;
 }

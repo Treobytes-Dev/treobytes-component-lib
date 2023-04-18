@@ -38,7 +38,7 @@ const Headings = {
 
 const Template = (args) => (
 	<Heading {...args} variant={args.variant}>
-		I'm a h{args.variant}. Structural Engineering 
+		I'm a h{args.variant}. 
 	</Heading>
 );
 
