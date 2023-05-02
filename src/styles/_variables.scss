@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 // break points
 $small: '(min-width: 607px)';
 $medium: '(min-width: 768px)';
@@ -32,10 +34,14 @@ $primary: #01ACC1;
 $secondary: #9A40A9;
 $warning: #FFA82B;
 $alert: #F44336;
+$tertiary: rgb(130,153,156);
+
 
 $primary-hover: #016573;
 $secondary-hover: #682C73;
 $warning-hover: #D98E25;
 $alert-hover: #D93B30;
 
-$third: rgb(130,153,156);
+
+// fonts
+$font-family: 'Libre Franklin', sans-serif;
