@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Select } from '../components/Select';
-import '../styles/select.scss';
+import { Select } from "../components/Select";
+import "../styles/select.scss";
 /**
  * Storybook Select story.
  * @template
@@ -9,59 +9,59 @@ import '../styles/select.scss';
  */
 
 const Selects = {
-	title: 'HTML Elements/Select',
-	component: Select,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Select element',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
-	argTypes: {
-		onChange: {
-			action: 'input filed focused',
-			control: {
-				disable: 'true',
-			},
-		},
-	},
+  title: "HTML Elements/Select",
+  component: Select,
+  parameters: {
+    docs: {
+      description: {
+        component: "Select element",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
+  argTypes: {
+    onChange: {
+      action: "input filed focused",
+      control: {
+        disable: "true",
+      },
+    },
+  },
 };
 
 const Template = (args) => (
-	<Select {...args} setName={args.setName}>
-		{args.children}
-	</Select>
+  <Select {...args} setName={args.setName}>
+    {args.children}
+  </Select>
 );
 
 export const select = Template.bind({});
 select.args = {
-	label: 'Label',
-	labelFor: 'html-for',
-	setName: 'setName',
-	defaultValue: 'Select one',
-	children: (
-		<>
-			<option
-				//   key={uuidv4()}
-				className='option'
-				value='one'
-			>
-				One
-			</option>
-			<option
-				//   key={uuidv4()}
-				className='option'
-				value='two'
-			>
-				Two
-			</option>
-		</>
-	),
+  label: "Label",
+  labelFor: "html-for",
+  setName: "setName",
+  defaultValue: "Select one",
+  children: (
+    <>
+      <option
+        //   key={uuidv4()}
+        className="option"
+        value="one"
+      >
+        One
+      </option>
+      <option
+        //   key={uuidv4()}
+        className="option"
+        value="two"
+      >
+        Two
+      </option>
+    </>
+  ),
 };
-select.storyName = 'Default';
+select.storyName = "Default";
 
 export default Selects;

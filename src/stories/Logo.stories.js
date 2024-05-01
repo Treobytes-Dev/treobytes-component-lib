@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Logo } from '../components/Logo';
-import '../styles/logo.scss';
+import { Logo } from "../components/Logo";
+import "../styles/logo.scss";
 /**
  * Storybook Logo story.
  * @template
@@ -9,32 +9,32 @@ import '../styles/logo.scss';
  */
 
 const Logos = {
-	title: 'Treobytes Branded/Components/Logo',
-	component: Logo,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Logo',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
-	argTypes: {
-		path: {
-			control: {
-				disable: 'true',
-			},
-		},
-	},
+  title: "Treobytes Branded/Components/Logo",
+  component: Logo,
+  parameters: {
+    docs: {
+      description: {
+        component: "Logo",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
+  argTypes: {
+    path: {
+      control: {
+        disable: "true",
+      },
+    },
+  },
 };
 
 const Template = (args) => <Logo {...args} />;
 
 export const logo = Template.bind({});
 logo.args = {
-	href: '/',
+  href: "/",
 };
-logo.storyName = 'Default';
+logo.storyName = "Default";
 export default Logos;
