@@ -27,9 +27,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build and Export Next.js app
+      - name: Build and Export Storybook app
         run: |
-          npm run build
+          npm run build-storybook
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
