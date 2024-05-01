@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Loader } from '../components/Loader';
-import '../styles/loader.scss';
+import { Loader } from "../components/Loader";
+import "../styles/loader.scss";
 /**
  * Storybook Loader story.
  * @template
@@ -9,26 +9,26 @@ import '../styles/loader.scss';
  */
 
 const Loaders = {
-	title: 'Loaders/Loader',
-	component: Loader,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Loader',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
+  title: "Loaders/Loader",
+  component: Loader,
+  parameters: {
+    docs: {
+      description: {
+        component: "Loader",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
 };
 
 const Template = (args) => <Loader {...args} />;
 
 export const loader = Template.bind({});
 loader.args = {
-	fill: '#333',
+  fill: "#333",
 };
-loader.storyName = 'Default';
+loader.storyName = "Default";
 
 export default Loaders;
