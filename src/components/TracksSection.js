@@ -1,9 +1,11 @@
 import { string } from 'prop-types';
 
+const currentYear = new Date().getFullYear();
+
 const TracksSection = ({ componentName }) => (
 	<div className={componentName}>
 		<div className='container'>
-			<h3 className='header header-three'>{`Tracks 2024`.toUpperCase()}</h3>
+			<h3 className='header header-three'>{`Tracks ${currentYear}`.toUpperCase()}</h3>
 			<h6 className='header header-six'>
 				Note:
 				<span className='callout'>

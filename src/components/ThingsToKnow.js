@@ -10,6 +10,7 @@ const ThingsToKnow = ({ componentName }) => (
 				<div className='col col-1'>
 					<h3 className='header header-three'>Summer of STEM</h3>
 
+{/* dates */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Dates`.toUpperCase()}</h6>
 						<div className='groups'>
@@ -24,11 +25,13 @@ const ThingsToKnow = ({ componentName }) => (
 						</div>
 					</div>
 
+{/* locations */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Locations`.toUpperCase()}</h6>
 						<p className='paragraph'>Mesa College</p>
 					</div>
 
+{/* sign up */}
 					<div className='wrapper-buttons'>
 						<h6 className='header header-six'>{`Sign Up`.toUpperCase()}</h6>
 						<a
@@ -41,29 +44,35 @@ const ThingsToKnow = ({ componentName }) => (
 						</a>
 					</div>
 
+{/* enrollment */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Enrollment`.toUpperCase()}</h6>
 						<p className='paragraph'>Immediate access | Open to all students</p>
 					</div>
 				</div>
+
 				<div className='col col-2'>
 					<h3 className='header header-three'>Level Up</h3>
 
+{/* dates */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Dates`.toUpperCase()}</h6>
 						<p className='paragraph'>July 15 through August 9</p>
 					</div>
 
+{/* locations */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Locations`.toUpperCase()}</h6>
 						<p className='paragraph'>Mesa College and City College</p>
 					</div>
 
+{/* sign up */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Sign Up`.toUpperCase()}</h6>
 						<p className='paragraph'>Inplay (announced by SDUSD)</p>
 					</div>
 
+{/* enrollment */}
 					<div className='block'>
 						<h6 className='header header-six'>{`Enrollment`.toUpperCase()}</h6>
 						<p className='paragraph'>
