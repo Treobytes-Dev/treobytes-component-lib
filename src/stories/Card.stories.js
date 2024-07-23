@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Card } from '../components/Card';
-import '../styles/card.scss';
+import { Card } from "../components/Card";
+import "../styles/card.scss";
 /**
  * Storybook Card story.
  * @template
@@ -9,34 +9,34 @@ import '../styles/card.scss';
  */
 
 const Cards = {
-	title: 'HTML Elements/Card',
-	component: Card,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Card element',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
+  title: "HTML Elements/Card",
+  component: Card,
+  parameters: {
+    docs: {
+      description: {
+        component: "Card element",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
 
-	argTypes: {
-		additionalClassName: {
-			control: {
-				disable: 'true',
-			},
-		},
-	},
+  argTypes: {
+    additionalClassName: {
+      control: {
+        disable: "true",
+      },
+    },
+  },
 };
 
 const Template = (args) => <Card {...args} />;
 
 export const cardDefault = Template.bind({});
 cardDefault.args = {
-	children: 'Card',
+  children: "Card",
 };
-cardDefault.storyName = 'default';
+cardDefault.storyName = "default";
 
 export default Cards;

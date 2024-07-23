@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { AnimationGroup } from '../components/AnimationGroup';
-import '../styles/animation.scss';
+import { AnimationGroup } from "../components/AnimationGroup";
+import "../styles/animation.scss";
 /**
  * Storybook AnimationGroup story.
  * @template
@@ -9,25 +9,25 @@ import '../styles/animation.scss';
  */
 
 const AnimationGroups = {
-	title: 'Animations/AnimationGroup',
-	component: AnimationGroup,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Animation Group',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
+  title: "Animations/AnimationGroup",
+  component: AnimationGroup,
+  parameters: {
+    docs: {
+      description: {
+        component: "Animation Group",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
 };
 
 const AnimationGroupTemplate = (args) => <AnimationGroup {...args} />;
 export const animationGroup = AnimationGroupTemplate.bind({});
 animationGroup.args = {
-	addItem: 'Add Item',
+  addItem: "Add Item",
 };
-animationGroup.storyName = 'Default';
+animationGroup.storyName = "Default";
 
 export default AnimationGroups;

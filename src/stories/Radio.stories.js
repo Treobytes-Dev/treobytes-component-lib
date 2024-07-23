@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Radio } from '../components/Radio';
-import '../styles/select.scss';
+import { Radio } from "../components/Radio";
+import "../styles/select.scss";
 /**
  * Storybook Radio story.
  * @template
@@ -9,42 +9,42 @@ import '../styles/select.scss';
  */
 
 const Radios = {
-	title: 'HTML Elements/Radio',
-	component: Radio,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Radio element',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
+  title: "HTML Elements/Radio",
+  component: Radio,
+  parameters: {
+    docs: {
+      description: {
+        component: "Radio element",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
 
-	argTypes: {
-		onChange: {
-			action: 'input filed focused',
-			control: {
-				disable: 'true',
-			},
-		},
-	},
+  argTypes: {
+    onChange: {
+      action: "input filed focused",
+      control: {
+        disable: "true",
+      },
+    },
+  },
 };
 
 const Template = (args) => (
-	<Radio {...args} setName={args.setName}>
-		{args.children}
-	</Radio>
+  <Radio {...args} setName={args.setName}>
+    {args.children}
+  </Radio>
 );
 
 export const radio = Template.bind({});
 radio.args = {
-	label: 'Label',
-	labelFor: 'html-for',
-	setName: 'setName',
-	propertyValue: 'test',
+  label: "Label",
+  labelFor: "html-for",
+  setName: "setName",
+  propertyValue: "test",
 };
-radio.storyName = 'Default';
+radio.storyName = "Default";
 
 export default Radios;

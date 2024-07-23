@@ -1,25 +1,19 @@
 import React from 'react';
-import { string } from 'prop-types';
-
-/**
- * React Hero component.
- * @function
- * Hero - Renders a branded Treobytes hero component.
- */
+import { string, any } from 'prop-types';
 
 export const Hero = ({
 	componentName,
-	additionalClassName = '',
+	additionalClassName,
 	children,
 	background,
 }) => {
 	return (
 		<div
-			className={`${componentName}-wrapper ${additionalClassName}`}
+			className={`${componentName} ${additionalClassName}`}
 			data-test-id={componentName}
 			style={{ backgroundImage: `url(${background})` }}
 		>
-			<div className={componentName}>{children}</div>
+			<div className='body'>{children}</div>
 		</div>
 	);
 };
@@ -33,7 +27,7 @@ Hero.propTypes = {
 	/**
 	 * Add Hero contents
 	 */
-	children: string,
+	children: any,
 
 	/**
 	 * Add Hero image
@@ -43,4 +37,7 @@ Hero.propTypes = {
 
 Hero.defaultProps = {
 	componentName: 'hero',
+	additionalClassName: '',
+  children: any,
+	background:string
 };
