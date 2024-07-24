@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Toggle } from '../components/Toggle';
-import '../styles/toggle.scss';
+import { Toggle } from "../components/Toggle";
+import "../styles/toggle.scss";
 /**
  * Storybook Toggle story.
  * @template
@@ -9,28 +9,28 @@ import '../styles/toggle.scss';
  */
 
 const Toggles = {
-	title: 'Modules/Toggle',
-	component: Toggle,
+  title: "Modules/Toggle",
+  component: Toggle,
 
-	parameters: {
-		docs: {
-			description: {
-				component: 'Toggle functionality',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
+  parameters: {
+    docs: {
+      description: {
+        component: "Toggle functionality",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
 };
 
 const Template = (args) => <Toggle {...args} />;
 
 export const toggle = Template.bind({});
 toggle.args = {
-	isOpenChildren: <>OPEN</>,
-	isClosedChildren: <>Closed</>,
+  isOpenChildren: <>OPEN</>,
+  isClosedChildren: <>Closed</>,
 };
-toggle.storyName = 'Default';
+toggle.storyName = "Default";
 
 export default Toggles;

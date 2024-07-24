@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Footer } from '../components/Footer';
-import '../styles/footer.scss';
+import { Footer } from "../components/Footer";
+import "../styles/footer.scss";
 /**
  * Storybook Footer story.
  * @template
@@ -9,36 +9,36 @@ import '../styles/footer.scss';
  */
 
 const Footers = {
-	title: 'Treobytes Branded/Components/Footer',
-	component: Footer,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Footer',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
-	argTypes: {
-		target: {
-			control: {
-				type: 'select',
-				options: ['_blank', '_self'],
-			},
-		},
-	},
+  title: "Treobytes Branded/Components/Footer",
+  component: Footer,
+  parameters: {
+    docs: {
+      description: {
+        component: "Footer",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
+  argTypes: {
+    target: {
+      control: {
+        type: "select",
+        options: ["_blank", "_self"],
+      },
+    },
+  },
 };
 
 const Template = (args) => <Footer {...args} />;
 
 export const footer = Template.bind({});
 footer.args = {
-	target: '_blank',
-	href: 'https://github.com/',
-	children: 'Footer',
+  target: "_blank",
+  href: "https://github.com/",
+  children: "Footer",
 };
-footer.storyName = 'Default';
+footer.storyName = "Default";
 
 export default Footers;

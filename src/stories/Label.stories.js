@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Label } from '../components/Label';
-import '../styles/label.scss';
+import { Label } from "../components/Label";
+import "../styles/label.scss";
 /**
  * Storybook Label story.
  * @template
@@ -9,27 +9,27 @@ import '../styles/label.scss';
  */
 
 const Labels = {
-	title: 'HTML Elements/Label',
-	component: Label,
-	parameters: {
-		docs: {
-			description: {
-				component: 'Label element',
-			},
-			source: {
-				type: 'dynamic',
-			},
-		},
-	},
+  title: "HTML Elements/Label",
+  component: Label,
+  parameters: {
+    docs: {
+      description: {
+        component: "Label element",
+      },
+      source: {
+        type: "dynamic",
+      },
+    },
+  },
 };
 
 const Template = (args) => <Label {...args} />;
 
 export const label = Template.bind({});
 label.args = {
-	htmlFor: 'email',
-	children: 'Label',
+  htmlFor: "email",
+  children: "Label",
 };
-label.storyName = 'Default';
+label.storyName = "Default";
 
 export default Labels;
