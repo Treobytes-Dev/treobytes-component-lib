@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
 // break points
 $small: '(min-width: 607px)';
 $medium: '(min-width: 768px)';
@@ -28,14 +30,24 @@ $black:    #000 !default;
 $color-muted-blue: #8793ab;
 
 // brand colors
-$primary: #01ACC1;
-$secondary: #9A40A9;
-$warning: #FFA82B;
-$alert: #F44336;
+$color-primary: #6ec1e4;
+$color-secondary: rgb(173, 33, 70);
+$color-third: rgb(219, 127, 48);
+$color-fourth: #e2ebf5;
 
-$primary-hover: #016573;
-$secondary-hover: #682C73;
-$warning-hover: #D98E25;
-$alert-hover: #D93B30;
+$color-pale: #ce90a2;
 
-$third: rgb(130,153,156);
+$color-warning: #ff9800;
+$color-success: #4caf50;
+$color-danger: #f44336;
+
+// fonts
+$font-family: 'Libre Franklin', sans-serif;
+
+// heading
+$heading-one: 2.5rem;
+$heading-two: 2rem;
+$heading-three: 1.75rem;
+$heading-four: 1.5rem;
+$heading-five: 1.25rem;
+$heading-six: 1rem;

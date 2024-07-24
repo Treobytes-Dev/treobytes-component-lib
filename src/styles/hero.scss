@@ -1,20 +1,93 @@
-@import "./_variables";
-// BASE STYLES
+@import './_variables.scss';
+@import './animation.scss';
 
 html,
 body,
-.root,
-#root {
-  height: 100%;
+#__next,
+.content,
+.page {
+	height: 100%;
 }
 
-.sb-show-main.sb-main-padded {
-  padding: 0;
+.hero,
+.hero-wrapper {
+	height: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .hero-wrapper {
-  height: 100%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+	color: $color-white;
+	height: 60%;
+
+	@media #{$medium} {
+		height: 80%;
+	}
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: center;
+		height: 100%;
+
+		.fore-ground {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 50%;
+
+			.text {
+				padding: 40px;
+				background-color: $color-black-alpha;
+				border-radius: 10px;
+				display: flex;
+				width: 100%;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				box-shadow: 20px 20px 60px #1b1b1b;
+			}
+		}
+
+		.assets {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			height: 50%;
+			padding-top: 25%;
+
+			@media #{$medium} {
+				justify-content: flex-end;
+				padding-top: 0;
+			}
+
+			.carrot-down {
+				@extend .heartbeat;
+				background-color: rgba($color: $color-white, $alpha: 0.4);
+				border-radius: 50%;
+				height: 100px;
+				width: 100px;
+				box-shadow: 20px 20px 60px #bebebe;
+
+				&:hover {
+					background-color: $color-white;
+				}
+
+				@media #{$medium} {
+					background-color: $color-white;
+				}
+			}
+		}
+	}
+}
+
+.template-intro {
+	.container {
+		padding-bottom: 0;
+	}
 }

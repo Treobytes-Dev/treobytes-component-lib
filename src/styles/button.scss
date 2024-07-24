@@ -53,34 +53,113 @@
   box-shadow: none;
 }
 
-.primary {
-  background-color: $primary;
+.button {
+	padding: 10px 5px;
+	border-radius: 5px;
+	height: 60px;
+  border-radius: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    background-color: $primary-hover;
-  }
-}
+		opacity: 0.8;
+	}
 
-.secondary {
-  background-color: $secondary;
+	&.primary {
+		background-color: $color-primary;
+		color: $color-white;
+		width: 100%;
+	}
 
-  &:hover {
-    background-color: $secondary-hover;
-  }
-}
+	&.submit {
+		background-color: $color-success;
+		color: $color-white;
+		width: 100%;
+	}
 
-.warning {
-  background-color: $warning;
+	&.edit {
+		background-color: $color-white;
+    color: $color-font-body;
+		border: 1px solid $color-font-body;
+		width: 100%;
+	}
 
-  &:hover {
-    background-color: $warning-hover;
-  }
-}
+	&.delete {
+		background-color: $color-white;
+		color: $color-danger;
+		width: 100%;
+	}
 
-.alert {
-  background-color: $alert;
+	&.warning {
+		background-color: $color-white;
+		border: 1px solid $color-warning;
+		color: $color-warning;
+		width: 100%;
+	}
 
-  &:hover {
-    background-color: $alert-hover;
-  }
+	&.red {
+		background-color: $color-secondary;
+	}
+
+	&.orange {
+		background-color: $color-third;
+	}
+
+	&.pale {
+		background-color: #ce90a2;
+	}
+
+	&.purple {
+		background-color: rgb(137, 44, 153);
+	}
+
+	&.blue {
+		background-color: rgb(0, 74, 173);
+	}
+
+	&.lime-green {
+		background-color: #7ed957;
+	}
+
+	&.neon-orange {
+		background-color: #ff5757;
+	}
+
+	&.sky-blue {
+		background-color: #0ac0df;
+	}
+
+	&.slate-grey {
+		background-color: #a6a6a6;
+	}
+
+	&.grass-green {
+		background-color: #00bf63;
+	}
+
+	&.mustard-yellow {
+		background-color: #efc908;
+	}
+
+	&.candy-purple {
+		background-color: #ca6ce6;
+	}
+
+	&.royal-blue {
+		background-color: #0078b5;
+	}
+
+	&.secondary {
+		background-color: $color-secondary;
+	}
+
+	&.off-orange {
+		background-color: #efa97c;
+	}
+
+	&.beige {
+		background-color: #f5e6cc;
+	}
 }

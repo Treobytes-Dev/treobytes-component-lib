@@ -9,17 +9,17 @@ import { string, func } from 'prop-types';
 
 export const Button = ({
 	children,
-	additionalClassName = '',
 	componentName,
 	disabled,
+  applicationSide,
+	additionalClassName,
 	variant,
 	...props
 }) => {
 	return (
 		<button
-			data-test-id={componentName}
-			type={componentName}
-			className={`${componentName} ${variant} ${additionalClassName}`}
+    className={`${componentName} ${variant}  ${additionalClassName}`}
+    data-test-id={componentName}
 			disabled={disabled}
 			{...props}
 		>
@@ -52,5 +52,6 @@ Button.propTypes = {
 
 Button.defaultProps = {
 	componentName: 'button',
+  additionalClassName: '',
 	onClick: undefined,
 };
